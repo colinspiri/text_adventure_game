@@ -1,5 +1,6 @@
 class Interaction:
-    def __init__(self, preview, aftermath, action_text):
+    def __init__(self, name, preview, aftermath, action_text):
+        self.name = name
         self.preview = preview
         self.aftermath = aftermath
         self.interacted_with = False
@@ -10,6 +11,14 @@ class Interaction:
             return self.preview
         else:
             return self.aftermath
+
+    def interact(self):
+        if not self.interacted_with:
+            print(self.action_text)
+            self.interacted_with = True
+
+    def get_name(self):
+        return self.name
 
     def get_preview(self):
         return self.preview

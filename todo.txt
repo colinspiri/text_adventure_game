@@ -1,7 +1,7 @@
 Todo:
 -add random descriptions when generating a grid of locations
--finish interactions class
+-fix input (bug with pc not being a global variable)
 -add items
 -add more commands (from java project)
 -catch up to java project
--transfer java todo.txt to here 
+-transfer java todo.txt to here
